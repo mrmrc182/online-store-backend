@@ -68,7 +68,7 @@ router.delete("/:id", async (req, res) => {
         id: req.params.id,
       },
       name: "category_name",
-      onDelete: "SET NULL",
+      onDelete: "SET NULL"
     });
     if (!categoryData) {
       res.status(404).json({ message: "No category found with this id!" });

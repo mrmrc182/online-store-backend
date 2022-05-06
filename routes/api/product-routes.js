@@ -71,8 +71,7 @@ router.post("/", async (req, res) => {
 // update product
 router.put("/:id", async (req, res) => {
   // update product data
-  const productData = Product.update(req.body, {},{
-    
+  const productData = Product.update(req.body, {
     where: {
       id: req.params.id,
     },
@@ -118,7 +117,8 @@ router.delete("/:id", async (req, res) => {
       where: {
         id: req.params.id,
       },
-      onDelete: "SET NULL",
+      name: "product_name",
+      onDelete: "SET NULL"
     });
     if (!productData) {
       res.status(404).json({ message: "No product found with this id!" });
