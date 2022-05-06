@@ -14,9 +14,10 @@ To test the app, first open a terminal and copy the ```.env.EXAMPLE``` file as a
 
 Then you will type ```npm start```.  This will start the server, and you can then view the various requests via Insomnia.
 
-[Refer to this video if you are having challenges]()
+[Refer to this video if you are having challenges getting app set up]()
 
 I have also attached a screenshot below for what the requests in Insomnia should look like.
 
+![Screenshot of Insomnia](BackendScreenshot.png)
 # License
 Matt Carlson Code 2022
